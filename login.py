@@ -1,2 +1,2 @@
-un = input("帳號:")
-pd = input("密碼:")
+username = input("帳號:")
+pwd = input("密碼:")
