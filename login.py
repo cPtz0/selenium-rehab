@@ -1,6 +1,6 @@
 print("debug")
 print("login...")
-
+print("登入...")
 username = input("輸入帳號:")
 pwd = input("輸入密碼:")
 print("登入成功")
