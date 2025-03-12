@@ -1,1 +1,0 @@
-I don't know how this work,just use for collision test.
