@@ -1,1 +1,1 @@
-print("分支測試用")
+print("分支測試用 Collision")
