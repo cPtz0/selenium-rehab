@@ -1,2 +1,12 @@
 # selenium-rehab
-預期達成：selenium自動測試 + 後期 git Action + Docker 容器內置入 + K3s自動部署 需要的完整技術練習
+
+- 建立 feature 分支開發
+- 提交 PR 並進行模擬 Code Review 修正
+- 合併至 main 並刪除分支
+- 建立版本標籤並發布 GitHub Release
+- 專案結構調整為 `src/`, `tests/`, `docs/`
+ 
+## 備註
+ 
+後續預計加入單元測試、更多數學函式擴充與簡易 API 接口練習，逐步建立功能模組化與測試習慣。
+ 
