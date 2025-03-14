@@ -103,11 +103,10 @@ def sqrt(x : float) -> float:
     計算一數之平方根
 
     Args:
-        x(float): 傳入第一個參數,作為被除數。
-        y(float): 傳入第二個參數,作為除數。
+        x(float): 傳入第一個參數,作為開根號數。
  
     Returns:
-        float: x / y 的解
+        float: x開根號 的解
  
     Raises:
         ValueError: 當輸入為非數值型態或 x < 0則會觸發此錯誤
