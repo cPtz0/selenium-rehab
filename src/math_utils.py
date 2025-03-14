@@ -19,7 +19,7 @@ def square(x : float) -> float:
     Raises:
         ValueError: 當輸入為非數值型態則會觸發此錯誤。
  
-    使用案例:
+    Example:
         >>> square(5)
         25.0
     """
@@ -124,23 +124,23 @@ def sqrt(x : float) -> float:
 
 def factorial(x : int) -> int:
     """
-    傳入一個非負整數n,回傳n的階乘結果。
+    計算非負整數的階乘
 
     Args:
-        x (int): 傳入一參數,計算階乘。
+        x (int): 要計算的非負整數
  
     Returns:
         int: x 的階乘結果
  
     Raises:
-        ValueError: 當輸入為負數或非整數，則會觸發此錯誤。
+        ValueError: 當輸入為負數或非整數時觸發
  
-    使用案例:
+    Example:
         >>> factorial(5)
         120
     """
     if not isinstance(x,int) or x < 0:
-        raise ValueError("請輸入正整數!")
+        raise ValueError("輸入必須為非負整數!")
     if x == 0 or x == 1:
         return 1
     else:
