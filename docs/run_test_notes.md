@@ -1,5 +1,7 @@
 run_tests.py 說明筆記
- 
+
+這支腳本的目的是讓你在專案根目錄下，快速執行所有測試，不需要記一堆路徑或使用複雜指令。
+
 這是一份為了說明 `run_tests.py` 這支測試整合腳本的文件。
 如果你剛學會寫單元測試、遇到模組找不到、指令太長、資料夾結構無法掌握等問題，這份筆記是為了解決這些問題而寫下的。
 
@@ -94,6 +96,18 @@ Ran 2 tests in 0.002s
 OK
  
 ``` 
+錯誤時可能像這樣：
+```
+test_add (tests.test_math_utils.TestMathUtils) ... FAIL
+ 
+======================================================================
+FAIL: test_add (tests.test_math_utils.TestMathUtils)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "...", line 8, in test_add
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+```
 ---
  
 ## 第五步：將測試結果交給自動化系統判斷
