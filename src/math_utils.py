@@ -88,7 +88,7 @@ def divide(x : float , y : float) -> float:
         ZeroDivisonError: 當除數為0,即 y = 0 時
 
     Example:
-        >>> devide(4,2)
+        >>> divide(4,2)
         2
     """
     if not isinstance(x,(int,float)):
@@ -122,6 +122,29 @@ def sqrt(x : float) -> float:
     
     return  math.sqrt(x) 
 
+def factorial(x : int) -> int:
+    """
+    傳入一個非負整數n,回傳n的階乘結果。
+
+    Args:
+        x (int): 傳入一參數,計算階乘。
+ 
+    Returns:
+        int: x 的階乘結果
+ 
+    Raises:
+        ValueError: 當輸入為負數或非整數，則會觸發此錯誤。
+ 
+    使用案例:
+        >>> factorial(5)
+        120
+    """
+    if not isinstance(x,int) or x < 0:
+        raise ValueError("請輸入正整數!")
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return x * factorial(x - 1) 
 
 if __name__ == "__main__":
     try:
