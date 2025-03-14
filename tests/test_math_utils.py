@@ -1,5 +1,5 @@
 import unittest
-from src.math_utils import add,subtract,divide,sqrt,square
+from src.math_utils import add,subtract,divide,sqrt,square,factorial
 
 class TestMathUtils(unittest.TestCase):
     # 正常數據測試
@@ -13,6 +13,8 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(sqrt(49),7)
     def test_math_square(self):
         self.assertEqual(square(9),81)
+    def test_math_factorial(self): 
+        self.assertEqual(factorial(5),120)
     # 異常數據測試
     def test_math_devide_by_zero(self): 
         with self.assertRaises(ZeroDivisionError):
@@ -23,6 +25,10 @@ class TestMathUtils(unittest.TestCase):
     def test_math_square_input_wrong_value(self): 
         with self.assertRaises(ValueError):
             square('Word')
+    def test_math_factorial_input_wrong_value(self): 
+        with self.assertRaises(ValueError):
+            factorial(-3)
+    
 
 if __name__ == "main":
     unittest.main()
