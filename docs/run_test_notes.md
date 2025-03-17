@@ -129,7 +129,7 @@ else:
  
 ---
  
-執行方式
+## 執行方式
  
 請在專案根目錄下執行：
  
@@ -137,8 +137,19 @@ else:
  
  
 ---
+
+## 測試覆蓋率分析
  
-小結
+本專案使用 [`coverage`](https://coverage.readthedocs.io/) 工具追蹤測試覆蓋範圍，  
+目前測試覆蓋率約為 XX%。執行方式如下：
+ 
+```bash
+coverage run run_tests.py
+coverage report -m
+coverage html  # 輸出 HTML 視覺化報表
+```
+ 
+## 小結
  
 這支程式的目的是「集中執行所有測試」
  

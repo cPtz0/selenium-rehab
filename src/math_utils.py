@@ -146,13 +146,4 @@ def factorial(x : int) -> int:
     else:
         return x * factorial(x - 1) 
 
-if __name__ == "__main__":
-    try:
-        num = float(input("輸入一個數字:")) 
-        num1 = float(input("輸入一個數字:")) 
-        print(f"{num1} + {num} 為:{add(num,num1)}")
-    except ValueError as ve: 
-        print(f"輸入錯誤{ve}")
-    except Exception as e:
-        print(f"預期外錯誤{e}")
     
