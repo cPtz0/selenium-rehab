@@ -13,7 +13,7 @@ class TestDivide(unittest.TestCase):
             divide('100',5)
             self.fail("觸發ValueError,但是沒有發生")
         except ValueError as e:
-            self.assertIn("數字",str(e))
+            self.assertIn("數值",str(e))
     def test_math_divide_small_number(self): 
         result = divide(1,1e-10)
         self.assertAlmostEqual(result , 1e10)

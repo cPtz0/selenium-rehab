@@ -10,4 +10,4 @@ class TestAdd(unittest.TestCase):
             add(1,'E')
             self.fail("觸發錯誤ValueError,但是沒有發生")
         except ValueError as e:
-            self.assertIn("數字",str(e))
+            self.assertIn("數值",str(e))

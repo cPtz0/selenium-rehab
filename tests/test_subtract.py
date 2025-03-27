@@ -9,4 +9,4 @@ class TestSubtract(unittest.TestCase):
             subtract('E',2)
             self.fail("觸發錯誤ValueError,但是沒有發生")
         except ValueError as e:
-            self.assertIn("數字",str(e))
+            self.assertIn("數值",str(e))
